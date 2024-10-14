@@ -16,19 +16,47 @@ public class Calculadora{
 
             if (opcion == 5){
                 System.out.println("Cerrar programa..");
+                break;
             }
 
-            System.out.println("Ingrese el primer numero: ");
-            double num1 = scanner.nextDouble();
-            System.out.println("Ingrese el segundo numero: ");
-            double num2 = scanner.nextDouble();
-            double resultado;
+
 
             if (opcion == 1){
+                System.out.println("Ingrese el primer numero: ");
+                double num1 = scanner.nextDouble();
+                System.out.println("Ingrese el segundo numero: ");
+                double num2 = scanner.nextDouble();
+                double resultado;
                 resultado = num1 + num2;
                 System.out.println("El resultado es: "+resultado);
+            }else if (opcion == 2){
+                System.out.println("Ingrese el primer numero: ");
+                double num1 = scanner.nextDouble();
+                System.out.println("Ingrese el segundo numero: ");
+                double num2 = scanner.nextDouble();
+                double resultado;
+                resultado = num1 - num2;
+                System.out.println("El resultado es: "+resultado);
+            }else if (opcion == 3){
+                System.out.println("Ingrese el primer numero: ");
+                double num1 = scanner.nextDouble();
+                System.out.println("Ingrese el segundo numero: ");
+                double num2 = scanner.nextDouble();
+                double resultado;
+                resultado = num1 * num2;
+                System.out.println("El resultado es: "+resultado);
+            }else if (opcion == 4){
+                System.out.println("Ingrese el primer numero: ");
+                double num1 = scanner.nextDouble();
+                System.out.println("Ingrese el segundo numero: ");
+                double num2 = scanner.nextDouble();
+                double resultado;
+                resultado = num1 / num2;
+                System.out.println("El resultado es: "+resultado);
+            }else{
+                System.out.println("Opcion no valida, vuelva a intentarlo!");
             }
-
         }
+        scanner.close();
     }
 }
